@@ -27,6 +27,7 @@ class LeagueTable
 
     public function playerRank(int $rank) : string
     {
+      
           array_multisort(
             array_column($this->standings, 'score'),  SORT_DESC,
             array_column($this->standings, 'games_played'), SORT_ASC,
