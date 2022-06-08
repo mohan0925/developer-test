@@ -23,4 +23,4 @@ AND DATE_ADD(UNIXTIME(A.`created`), INTERVAL R2.field_follow_up_in_value - 7 DAY
  
 At line 17 "  INTERVAL R2.field_follow_up_in_value - 7 DAY " --- syntax should be written as INTERVAL (R2.field_follow_up_in_value - 7) DAY
 At line 21 " R2.field_follow_up_in_value NOT NULL " --- syntax should be IS NOT NULL
-At line 23 " INTERVAL R2.field_follow_up_in_value - 7 DAY "  --- syntax should be written as INTERVAL (R2.field_follow_up_in_value - 7) DAY
+At line 23 " INTERVAL R2.field_follow_up_in_value - 7 DAY "  --- syntax should be written as INTERVAL (R2.field_follow_up_in_value - 7) DAY 
