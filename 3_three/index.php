@@ -19,6 +19,7 @@
           <input name="postURL" class="btn btn-lg btn-primary btn-block" value="Get Size" type="submit">
             <br>
 	  <?php 
+		
 		if(isset($_POST['postURL'])):
                   $url = $_POST['url'];
                   $curl = curl_init($url);
@@ -29,6 +30,7 @@
                   curl_exec($curl);
                   $fileSize = curl_getinfo($curl, CURLINFO_CONTENT_LENGTH_DOWNLOAD);
                   $fileSizeMB = round($fileSize / 1048576,2);
+		
 	  ?>
 		<h6 style="color:green;"><?php echo $fileSizeMB . ' MB '?></h6>
 	<?php endif; ?>
